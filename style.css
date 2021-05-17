@@ -1,0 +1,85 @@
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+body {
+    height: 100vh;
+    background-color: beige;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 30px 0;
+}
+
+div {
+    height: 300px;
+    width: 150px;
+}
+
+.first :first-child {
+   margin: 10px;
+    background-color:white;
+}
+.first :last-child {
+    margin: 10px;
+    background-color:white;
+}
+.second :first-child {
+    margin: 10px;
+    background-color: white;
+}
+.second :last-child {
+    margin: 10px;
+    background-color: white;
+}
+
+.first :first-child > div{
+    position: relative;
+     height: 280px;
+     width: 130px;
+     background-color:orange;
+ }
+ .first :last-child >div{
+    position: relative;
+    height: 280px;
+    width: 130px;
+    background-color:green;
+}
+.second :first-child >div{
+    position: relative;
+    height: 280px;
+    width: 130px;
+    background-color: rgb(235, 123, 123);
+}
+.second :last-child >div{
+    position: relative;
+    height: 280px;
+    width: 130px;
+    background-color: rgb(74, 131, 236);
+}
+
+span {
+    
+    position: absolute;
+    display: block;
+    width: 130px;
+    height: 30px;
+    left: -10px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.color {
+    
+    top: 30px;
+}
+
+.id {
+    
+    top: 60px;
+}
