@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+
+body {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    width: 600px;
+    height: 100vh;
+    background-color: rgb(245, 231, 243);
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.title {
+    position: absolute;
+    top:150px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: color 4s infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg) scale(1);
+        color: darkred;
+        
+    }
+    25% {
+        transform: rotateZ(90deg) scale(1.1);
+        color: rgb(238, 175, 124);
+        
+    }
+    50% {
+        transform: rotateZ(180deg) scale(1.2);
+        color: rgb(110, 219, 183);
+        
+    }
+    75% {
+        transform: rotateZ(270deg) scale(1.1);
+        color: rgb(168, 167, 245);
+       
+    }
+    100% {
+        transform: rotateZ(360deg) scale(1);
+        color: rgb(223, 144, 243);
+       
+    }
+}
+.match {
+    margin-top: 50px;
+    width: 51%;
+    height: 50%;
+    border-radius: 25px;
+    animation: rotate 4s infinite cubic-bezier(0.420, 0.495, 0.000, 1.035);
+    
+}
+.match__cate {
+    position: relative;  
+}
+@keyframes color {
+    0% {
+        color: darkred;
+    }
+    25% {
+        color: rgb(238, 175, 124);
+    }
+    50% {
+        color: rgb(110, 219, 183);
+    }
+    75% {
+        color: rgb(168, 167, 245);
+    }
+    100% {
+        color: rgb(223, 144, 243);
+    }
+}
+.sports {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: rgb(244, 248, 218);
+    font-size: 30px;
+    font-weight: bold;
+    border: 1px solid rgb(241, 225, 190);
+    box-shadow: 0px 3px 5px 5px rgb(230, 245, 190);
+
+}
+
+.match__cate :first-child {
+    top: 50px;
+    left: 75px;
+    animation: rotate 4s infinite cubic-bezier(0.420, 0.495, 0.000, 1.035);
+    
+
+}
+.match__cate :nth-child(2){
+    top: 150px;
+    animation: rotate 4s infinite cubic-bezier(0.420, 0.495, 0.000, 1.035);
+}
+.match__cate :nth-child(3){
+    left: 150px;
+    top: 150px;
+    animation: rotate 4s infinite cubic-bezier(0.420, 0.495, 0.000, 1.035);
+}
+.match__cate :last-child {
+    top: 250px;
+    left: 75px;
+    animation: rotate 4s infinite cubic-bezier(0.420, 0.495, 0.000, 1.035);
+}
+
+@keyframes splash {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+.splashImg{
+    position: absolute;
+    height: 100vh;
+    width: 600px;
+    animation: splash 1s ease-in-out forwards;
+}
