@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import "reset.css";
+
+
+body {
+   
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    width: 600px;
+    height: 100vh;
+    background-color: rgb(248, 240, 247);
+    font-family: 'Gloria Hallelujah', cursive;
+}
+.nav {
+    position: absolute;
+    width: 600px;
+    height: 30px;
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    color: rgb(250, 247, 244);
+    font-size: 20px;
+    background-color: rgb(28, 29, 29);
+}
+.menu {
+    position: absolute;
+    width: 600px;
+    height: 30px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    color: rgb(250, 247, 244);
+    font-size: 20px;
+    background-color: rgb(28, 29, 29);
+}
+
+.title {
+    position: relative;
+    top: 30px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-decoration: none;
+    
+}
+
+img {
+    
+    height: 100vh;
+    width: 600px;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    color: white;
+}
+.main span:nth-child(2){
+    box-sizing: content-box;
+    margin-top: 15px;
+    color: rgb(243, 39, 66);
+    font-size: 20px;
+    background-color: white;
+    box-shadow: 0px 2px 10px 2px white;
+   
+}
+@keyframes move {
+    0% {
+        transform: rotateX(0) rotateY(0);
+        background-color: black;
+
+    }
+    25% {transform: rotateX(0deg)rotateY(30deg) translateX(10px);
+        background-color: rgb(240, 70, 70);
+    }
+    50% {transform: rotateX(0deg)rotateY(-30deg)translateX(-10px);
+        background-color: rgb(245, 138, 77);
+    }
+    75% {transform: rotateX(0deg)rotateY(30deg)translateX(10px);
+        background-color: rgb(71, 245, 109);
+    }
+    100% {transform: rotateX(0)rotateY(0);
+        background-color: rgb(194, 71, 243);
+    }
+}
+.team__column, .team__column a {
+    display: flex;
+    flex-direction: column;
+    color: rgb(247, 241, 241);
+    font-size: 20px;
+    align-items: center;
+    margin: 10px;
+    height: 240px;
+    width: 180px;
+    background-color: rgb(34, 33, 33);
+    border-radius: 15px;
+    animation: move 4s ease-in-out infinite;
+    text-decoration: none;
+   
+    
+}
+.team {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+}
+
+.team__img {
+    margin-top: 20px;
+    height: 100px;
+    width: 150px;
+    background-color: rgb(250, 247, 246);
+    border-radius: 5px;
+    
+}
+.team__name {
+    margin-top: 20px;
+    
+}
+
+@keyframes splash {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.splashImg{
+    position: absolute;
+    height: 100vh;
+    width: 600px;
+    animation: splash 2s ease-in-out forwards;
+}
+
+#no-mobile {
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
+    background-color: black;
+    width: 100vw;
+    color: cornsilk;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    top: 0;
+  }
+  
+  @media screen and (max-width: 600px) {
+    #no-mobile {
+      display: none;
+    }
+  }
